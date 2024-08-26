@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-4j4i5z4sp-4kl9q(gc^%qi@d!(k-4e1-obtn%r)#f+7#i%e5vo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-milentecle-drfapi-2tydjl061a3.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+
+    'profiles',
 ]
 
 MIDDLEWARE = [
@@ -80,6 +82,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'drf_api.wsgi.application'
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-milentecle-drfapi-2tydjl061a3.ws.codeinstitute-ide.net']
 
 
 # Database
