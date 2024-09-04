@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'rest_framework',
 
     'profiles',
 ]
@@ -83,7 +84,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'drf_api.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-milentecle-drfapi-2tydjl061a3.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = ['http://8000-milentecle-drfapi-2tydjl061a3.ws.codeinstitute-ide.net']
 
 
 # Database
