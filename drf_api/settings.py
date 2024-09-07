@@ -35,7 +35,8 @@ SECRET_KEY = 'django-insecure-4j4i5z4sp-4kl9q(gc^%qi@d!(k-4e1-obtn%r)#f+7#i%e5vo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-milentecle-drfapi-2tydjl061a3.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['http://8000-milentecle-drfapi-2tydjl061a3.ws.codeinstitute-ide.net', 
+'8000-milentecle-drfapi-2tydjl061a3.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'rest_framework',
+    'posts',
 
     'profiles',
 ]
