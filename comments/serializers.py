@@ -13,10 +13,11 @@ class CommentSerializer(serializers.ModelSerializer):
         return request.user == obj.owner
 
     class Meta:
-        model = Profile
+        model = Comment
         fields = [
-            'id', 'owner', 'created_at', 'updated_at', 'name', 'content', 'image', 'is_owner'
-        ]
+            'id', 'owner', 'is_owner', 'profile_id', 'profile_image',
+            'post', 'created_at', 'updated_at', 'content'
+            ]
 
 
 class CommentsDetailSerializer(CommentSerializer):
