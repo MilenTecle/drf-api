@@ -60,7 +60,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'django-rest.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'django-rest-8a723769aa4b.herokuapp.com']
 
 
 # Application definition
@@ -153,6 +153,7 @@ else:
      DATABASES = {
          'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
      }
+     print('connected')
 
 
 # Password validation
