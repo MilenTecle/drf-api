@@ -120,6 +120,10 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ALLOWED_ORIGINS = [
+    "https://3000-milentecle-moments-w6g0upaxrw1.ws.codeinstitute-ide.net",
+]
+
 ROOT_URLCONF = 'drf_api.urls'
 
 TEMPLATES = [
