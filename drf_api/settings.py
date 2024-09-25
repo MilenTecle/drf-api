@@ -123,6 +123,7 @@ CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
     "https://3000-milentecle-moments-w6g0upaxrw1.ws.codeinstitute-ide.net",
+    "https://django-rest-8a723769aa4b.herokuapp.com",
 ]
 
 ROOT_URLCONF = 'drf_api.urls'
