@@ -66,7 +66,7 @@ ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'drf-api-reco-69ef489e362a.herokuapp.com',
     'moments-milen-643d2e38afde.herokuapp.com',
-    'https://milentecle-moments-w6g0upaxrw1.ws.codeinstitute-ide.net/',
+    'milentecle-moments-w6g0upaxrw1.ws.codeinstitute-ide.net',
 ]
 
 
