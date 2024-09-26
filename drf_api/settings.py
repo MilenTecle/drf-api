@@ -118,14 +118,15 @@ MIDDLEWARE = [
 if 'CLIENT_ORIGIN_DEV' in os.environ:
     extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
     CORS_ALLOWED_ORIGIN_REGEXES = [
-        rf"{extracted_url}\.ws\.codeinstitute-ide\.net$",
+        r"^https:\/\/3000-milentecle-moments-w6g0upaxrw1\.ws\.codeinstitute-ide\.net$",
     ]
 
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://moments-milen-643d2e38afde.herokuapp.com",
+    "https://3000-milentecle-moments-w6g0upaxrw1.ws.codeinstitute-ide.net",
     "https://django-rest-8a723769aa4b.herokuapp.com",
+    "https://moments-milen-643d2e38afde.herokuapp.com",
 ]
 
 ROOT_URLCONF = 'drf_api.urls'
