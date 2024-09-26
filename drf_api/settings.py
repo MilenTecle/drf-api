@@ -118,7 +118,7 @@ MIDDLEWARE = [
 if 'CLIENT_ORIGIN_DEV' in os.environ:
     extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
     CORS_ALLOWED_ORIGIN_REGEXES = [
-        r"^https:\/\/3000-milentecle-moments-w6g0upaxrw1\.ws\.codeinstitute-ide\.net$",
+        rf"{extracted_url}\.ws\.codeinstitute-ide\.net$",
     ]
 
 CORS_ALLOW_CREDENTIALS = True
