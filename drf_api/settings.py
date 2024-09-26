@@ -125,7 +125,7 @@ CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
     "https://3000-milentecle-moments-w6g0upaxrw1.ws.codeinstitute-ide.net",
-    "https://drf-api-reco.herokuapp.com",
+    "https://drf-api-reco-69ef489e362a.herokuapp.com",
     "https://moments-milen-643d2e38afde.herokuapp.com",
 ]
 
