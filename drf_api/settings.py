@@ -90,6 +90,7 @@ ALLOWED_HOSTS = [
     'drf-api-reco-69ef489e362a.herokuapp.com',
     'moments-milen-643d2e38afde.herokuapp.com',
     'milentecle-moments-w6g0upaxrw1.ws.codeinstitute-ide.net',
+    '8000-milentecle-drfapi-2tydjl061a3.ws.codeinstitute-ide.net'
 ]
 
 
@@ -134,7 +135,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
 ]
 
 
@@ -176,8 +176,6 @@ WSGI_APPLICATION = 'drf_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-print("Raw DATABASE_URL:", repr(os.environ.get("DATABASE_URL")))  # Use repr to show quotes
-
 if 'DEV' in os.environ:
     DATABASES = {
         'default': {
@@ -187,11 +185,9 @@ if 'DEV' in os.environ:
     }
 else:
     db_url = os.environ.get("DATABASE_URL")
-    print("Parsed DATABASE_URL:", repr(db_url))  # Debugging line
     DATABASES = {
         'default': dj_database_url.parse(db_url)
     }
-    print('connected')
 
 
 # Password validation
