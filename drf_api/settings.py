@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import re
 import os
-print(os.environ.get('DEV'))
 import dj_database_url
 from datetime import timedelta
 
@@ -84,7 +83,7 @@ if 'DEV' in os.environ:
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEBUG' in os.environ 
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
